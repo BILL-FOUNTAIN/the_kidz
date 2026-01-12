@@ -1,7 +1,159 @@
+@font-face {
+    font-family:"PlaylistScript";
+    src: url("PlaylistFF/Playlist\ Script.otf");
+}
 
-html, body {
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:50px;
+  font-style:normal; 
+
+}
+
+
+.navbar{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #e4f6e6;
+    padding: 5px 40px;
+    font-family: sans-serif;
+    font-size: 17px;
+    position:fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.navbar:hover{
+box-shadow: #003366 0 2px 5px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background-color: #f0f8ff;
+     gap:60px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(0, 51, 102);
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: black;
+}
+.logo{
+    display: flex;
+    align-items:center;
+    gap: 0px;
+
+}
+.logo-img{
+    height: 45px;
+    width: auto;
+    display: block;
+    margin-bottom:10px;
+    margin-right: 0;
+
+}
+.kidz{
+    font-size:40px;
+    font-family:"PlaylistScript",cursive;
+    color:#05953f;
+    margin-left: 0;
+}
+.hero{
+    background:linear-gradient(rgba(0, 51, 102, 0.5),rgba(52, 151, 90, 0.5)), url("images/orange.png") center fixed;
+     background-size: cover;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    color: rgb(232, 64, 64);
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.the{
+      color: #e4f6e6;
+    font-size: 150px;
+    font-family:"PlaylistScript",cursive;
+    font-weight: 100;
+    margin-bottom:-30px;
+
+    
+}
+.the:hover{
+   color:white;
+}
+.quote{
+    margin-top: 0px;
+    font-weight:normal;
+    color:#e4f6e6;
+    font-size: 25px;
+}
+.text{
+    color:#003366;
+    margin-top:40px ;
+    font-size: 50px;
+}
+.text:hover{
+    color: #e4f6e6;
+}
+.button{
+    border:#003366 solid 2px;
+    text-decoration: none;
+    background-color:#e4f6e6 ;
+    color:#003366 ;
+    padding: 15px;
+    border-radius:40px;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.button:hover{
+    color:#e4f6e6;
+    background-color: #003366;
+}
+
+.boutique{
+    background-color: #e4f6e6;
+     overflow: hidden;
+     transition: background-color 0.5s;
+     padding-left: 80px;
+    padding-right: 80px;
+     
+}
+.fruits{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+.inside{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 60px;
+
+}
+#titre{
+    font-size: 45px;
+    font-weight:normal;
+    color: #003366;
+}
+#certif{
+    font-size: 25px;
+    color: #003366;
+
+}
+.def{
+    display: flex;
+    margin-top: 20px;
+    
 }

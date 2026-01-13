@@ -252,3 +252,25 @@ section div > ul li p {
     background-color: #e4f6e6;
     transition-duration: 300ms;
 }
+
+/* --- SECTION 3 ---*/
+#mix {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#mix > div > div:nth-child(1) {
+    width: 100%px;
+    height: auto;
+}
+
+#mix > div > p {
+    font-size: 18px;
+}
+
+#mix > div > div:last-child, #mix > div > div:last-child p {
+    gap: 0;
+    font-size: 20px;
+}

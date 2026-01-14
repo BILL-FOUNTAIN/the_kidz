@@ -276,55 +276,62 @@ section div > ul li p {
     gap: 0;
     font-size: 20px;
 }
-h4:hover{
-    font-weight: lighter;
-}
-#duo:hover{
+
+#duo:hover {
     color: rgb(225, 11, 58);
 }
-#trop:hover{
+
+#trop:hover {
     color: #47ce7d;
 }
-#sol:hover{
+
+#sol:hover {
     color:coral;
 }
+
 #monde{
     display: flex;
     flex-direction: column;
-background-color: #d6e6f5;
-border-top: 2px solid #003366;
+    background-color: #d6e6f5;
+    border-top: 2px solid #003366;
 }
-.frest{
+
+.frest {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
-#message h2{
-     font-family:"PlaylistScript",cursive;
-     font-size:90px;
-     color: rgb(172, 54, 92);
-      margin-bottom: 0px;
-     
-    
+
+#message h2 {
+    font-family: "PlaylistScript",cursive;
+    font-size: 90px;
+    color: rgb(172, 54, 92);
+    margin-bottom: 0px;    
 }
-#message h2,#message p{
-    text-align:center;
+
+#message h2, #message p {
+    text-align: center;
 }
-    #message p{
-        margin-top: -20px;
-    }
-#message{
+
+#message p {
+    margin-top: -20px;
+}
+
+#message {
     text-align: center;
     align-items: center;
 }
-#bg{
+
+#message .button {
     background-color: #d6e6f5;
 }
-#bg:hover{
+
+#message .button:hover {
     color:#e4f6e6;
     background-color: #003366;
     transition-duration: 300ms;
 }
+
 /* --- FOOTER --- */
 footer {
     background-color:#003366;
@@ -338,36 +345,31 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 0 auto;
+    gap: 10px;
     padding-bottom: 40px;
 }
 
 .footer-col {
     flex: 1;
-    min-width: 200px;
     margin-bottom: 30px;
-}
-
-.footer-col ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-col ul li {
+.footer-col li {
     margin-bottom: 15px;
 }
 
-.footer-col ul li a {
+.footer-col li a {
     text-decoration: none;
-    color:#e4f6e6;
+    color: #e4f6e6;
     font-size: 16px;
     transition: opacity 0.3s;
 }
 
-.footer-col ul li a:hover {
+.footer-col li a:hover {
     opacity: 0.7;
 }
-
 
 .newsletter h3 {
     font-size: 24px;
@@ -382,7 +384,7 @@ footer {
 }
 
 .newsletter input {
-    width: 100%;
+    width: 90%;
     padding: 12px 15px;
     border: 1.5px solid #e4f6e6;
     border-radius: 25px;
@@ -393,8 +395,8 @@ footer {
 }
 
 .newsletter button {
-    background-color:#003366 ; 
-    color:#e4f6e6 ;
+    background-color: #003366 ; 
+    color: #e4f6e6 ;
     border: #e4f6e6 solid 1.5px;
     padding: 12px 35px;
     border-radius: 25px;
@@ -404,13 +406,11 @@ footer {
 }
 
 .newsletter button:hover {
-    background-color:#e4f6e6 ;
-    color:#003366;
+    background-color: #e4f6e6 ;
+    color: #003366;
 }
 
-
-.footer-bottom {
-    
+.footer-bottom {    
     border-top: 1.5px solid #e4f6e6;
     border-width: 100%;
     padding-top: 20px;
@@ -432,10 +432,10 @@ footer {
 }
 
 .kidz-text {
-    font-weight:500;
+    font-weight: 500;
     font-size: 30px;
     letter-spacing: 1px;
-    font-family:"PlaylistScript",cursive; 
+    font-family: "PlaylistScript",cursive; 
 }
 
 .copyright {
@@ -443,9 +443,7 @@ footer {
 }
 
 .copyright a {
-    color:#e4f6e6;
-    text-decoration:none;
+    color: #e4f6e6;
+    text-decoration: none;
     color: coral;
 }
-
-

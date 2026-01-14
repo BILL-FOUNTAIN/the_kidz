@@ -1,1 +1,449 @@
+@font-face {
+    font-family:"PlaylistScript";
+    src: url("PlaylistFF/Playlist\ Script.otf");
+}
 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50px;
+    font-style: normal;
+
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* --- HEADER --- */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e4f6e6;
+    padding: 10px 40px;
+    font-size: 17px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: rgba(0, 51, 102, .4) 0 2px 5px; /* HEXADECIMAL #00336666 */
+}
+
+nav:hover {
+    box-shadow: rgba(0, 51, 102, .6) 0 2px 5px;
+    transition-duration: 500ms;
+}
+
+nav a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: black;
+    transition-duration: 400ms;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+
+.kidz {
+    font-size: 40px;
+    font-family: "PlaylistScript", cursive;
+    color: #05953f;
+    margin-left: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+}
+
+/* --- MAIN --- */
+.hero {
+    background: linear-gradient(rgba(0, 51, 102, 0.5), rgba(52, 151, 90, 0.5)), url("images/orange.png") center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    color: #e4f6e6;
+    font-size: 150px;
+    font-family:"PlaylistScript",cursive;
+    font-weight: 100;
+    margin-bottom:-50px;
+}
+
+h1:hover {
+   color: white;
+   transition-duration: 300ms;
+}
+
+.quote {
+    font-weight: normal;
+    color: #e4f6e6;
+    font-size: 25px;
+}
+
+.hero p {
+    margin-top: 0px;
+    color: #003366;
+    margin-top: 25px;
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.button {
+    border: #003366 solid 2px;
+    text-decoration: none;
+    background-color:#e4f6e6;
+    color: #003366 ;
+    padding: 15px 20px;
+    border-radius: 3em;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.button:hover{
+    color:#e4f6e6;
+    background-color: #003366;
+    transition-duration: 300ms;
+}
+ 
+/* --- SECTION 1 --- */
+section {
+    background-color: #e4f6e6;
+    overflow: hidden;
+    transition: background-color 0.5s;
+    padding: 60px 90px;
+    border-top: 2px solid #003366;
+}
+
+section div {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: normal;
+    color: #003366;
+    margin: 20px 0;
+}
+
+section p {
+    font-size: 22px;
+    color: #003366;
+    line-height: 1.6;
+}
+
+#def {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    gap: 30px;
+}
+
+#def > div {
+    width: 180px;
+    height: auto;
+}
+
+section div > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    list-style: decimal-leading-zero inside;
+    padding: 50px 0;
+    border-top: 2px solid #003366;
+}
+
+h4 {
+    font-size: 20px;
+    color: #003366;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+section div > ul li p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* --- SECTION 2 --- */
+#products {
+    background: #003366;
+    color: #e4f6e6;
+}
+
+#products > div {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    margin: 40px 0;
+}
+
+#products > div > div {
+    border: 1px solid #e4f6e6;
+    width: 250px;
+    height: auto;
+}
+
+#products > div > div:hover {
+    border: 2px solid #e4f6e6;
+    cursor: pointer;
+}
+
+#products > div > div > div:nth-child(1) {
+    width: 100%;
+    height: 260px;
+}
+
+#products h2 {
+    color: #e4f6e6;
+}
+
+.product-description {
+    padding: 10px;
+    gap: 5px;
+}
+.product-description p {
+    color: #e4f6e6;
+}
+
+#products .button {
+    border: #e4f6e6 solid 2px;
+    text-decoration: none;
+    background-color:#003366;
+    color: #e4f6e6;
+    display: inline-block;
+}
+
+#products .button:hover{
+    color:#003366;
+    background-color: #e4f6e6;
+    transition-duration: 300ms;
+}
+
+/* --- SECTION 3 ---*/
+#mix {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#mix > div > div:nth-child(1) {
+    width: 100%px;
+    height: auto;
+}
+
+#mix > div > p {
+    font-size: 18px;
+}
+
+#mix > div > div:last-child, #mix > div > div:last-child p {
+    gap: 0;
+    font-size: 20px;
+}
+
+#duo:hover {
+    color: rgb(225, 11, 58);
+}
+
+#trop:hover {
+    color: #47ce7d;
+}
+
+#sol:hover {
+    color:coral;
+}
+
+#monde{
+    display: flex;
+    flex-direction: column;
+    background-color: #d6e6f5;
+    border-top: 2px solid #003366;
+}
+
+.frest {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#message h2 {
+    font-family: "PlaylistScript",cursive;
+    font-size: 90px;
+    color: rgb(172, 54, 92);
+    margin-bottom: 0px;    
+}
+
+#message h2, #message p {
+    text-align: center;
+}
+
+#message p {
+    margin-top: -20px;
+}
+
+#message {
+    text-align: center;
+    align-items: center;
+}
+
+#message .button {
+    background-color: #d6e6f5;
+}
+
+#message .button:hover {
+    color:#e4f6e6;
+    background-color: #003366;
+    transition-duration: 300ms;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color:#003366;
+    padding: 60px 40px 20px 40px;
+    border-top: 2px solid #05953f ;
+    color: #ffffff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col li {
+    margin-bottom: 15px;
+}
+
+.footer-col li a {
+    text-decoration: none;
+    color: #e4f6e6;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+.footer-col li a:hover {
+    opacity: 0.7;
+}
+
+.newsletter h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.newsletter p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.newsletter input {
+    width: 90%;
+    padding: 12px 15px;
+    border: 1.5px solid #e4f6e6;
+    border-radius: 25px;
+    background: transparent;
+    margin-bottom: 15px;
+    outline: none;
+    color: #e4f6e6;
+}
+
+.newsletter button {
+    background-color: #003366 ; 
+    color: #e4f6e6 ;
+    border: #e4f6e6 solid 1.5px;
+    padding: 12px 35px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #e4f6e6 ;
+    color: #003366;
+}
+
+.footer-bottom {    
+    border-top: 1.5px solid #e4f6e6;
+    border-width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    height: 30px;
+}
+
+.kidz-text {
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: "PlaylistScript",cursive; 
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.copyright a {
+    color: #e4f6e6;
+    text-decoration: none;
+    color: coral;
+}

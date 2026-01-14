@@ -1,11 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Kidz | Refraichissez votre journée</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logoki-removebg-preview (1).png">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logoki-removebg-preview (1).png" alt="gouttes de jus orange">
+                    <span class="kidz">The Kidz</span>
+                </a>
+            </div>
+            <ul>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="abonnement.html">Abonnements</a></li>
+                <li><a href="tastes.html">Nos Tastes</a></li>    
+                <li><a href="contact.html">Nous trouver</a></li>
+            </ul>         
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>The Kidz</h1>
+            <h2 class="quote">TASTE FOR BETTER</h2>
+            <p>
+                Boissons rafraissantes <br>
+                pour les enfants et les familles.
+            </p>
+            <a href="panier.html" class="button">Commander maintenant</a>
+        </section>
+
+        <section>
+            <div>
+                <h2>
+                    NATURELLEMENT<br>
+                    DELICIEUX
+                </h2>
+                <p>
+                    Certifiés biologiques. Nous n'utilisons que de vrais ingrédients. Aucun additif.<br>
+                    Aucun agent de conservation. Sans arômes ni colorants artificiels.
+                </p>
+                <div id="def">
+                    <div><img src="images/trorange-removebg-preview.png" alt="fruit_orange"  height="100%" width="100%"></div>
+                    <div><img src="images/trfaise-removebg-preview.png" alt="fruit_fraises" height="100%" width="100%"></div>
+                    <div><img src="images/trraisin-removebg-preview.png" alt="fruit_raisin"  height="100%" width="100%"></div>
+                    <div><img src="images/trmangu-removebg-preview.png" alt="fruit_mango" height="100%" width="100%"></div>
+                    <div><img src="images/tranana-removebg-preview.png" alt="fruit_pomme" height="100%" width="100%"></div>
+                </div>
+            </div>
+
+            <div>
+                <h2>POURQUOI THE KIDZ EST LE MEILLEUR</h2>
+                <ul>
+                    <li>
+                        <h4>Produits de qualité</h4>
+                        <p>
+                            Nos jus sont fabriqués à partir d'ingrédients biologiques de haute qualité, 
+                            garantissant une saveur naturelle et délicieuse à chaque gorgée.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Faible en sucre</h4>
+                        <p>
+                            Nous nous engageons à offrir des boissons faibles en sucre, 
+                            idéales pour les enfants et les familles soucieuses de leur santé.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Emballage écologique</h4>
+                        <p>
+                            Nos emballages sont conçus pour être respectueux de l'environnement, 
+                            contribuant ainsi à la réduction des déchets plastiques.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Variété de saveurs</h4>
+                        <p>
+                            Nous proposons une large gamme de saveurs fruitées pour satisfaire 
+                            tous les goûts, des classiques aux mélanges innovants.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>QUELLE EST VOTRE SAVEUR PREFEREE</h2>
+            <div>
+                <div>
+                    <div><img src="images/strawberry.png" alt="" height="100%" width="100%"></div>
+                    <div class="product-description">
+                        <h3>FRAISE & RAISIN</h3>
+                        <p>5$</p>
+                    </div>
+                </div>
+                <div>
+                    <div><img src="images/Gemini_Generated_Image_f4wc1cf4wc1cf4wc.png" alt="" height="100%" width="100%"></div>
+                    <div class="product-description">
+                        <h3>ORANGE</h3>
+                        <p>8$</p>
+                    </div>
+                </div>
+                <div>
+                    <div><img src="images/pineapple.png" alt="" height="100%" width="100%"></div>
+                    <div class="product-description">
+                        <h3>PINEAPPLE</h3>
+                        <p>4$</p>
+                    </div>
+                </div>
+                <div>
+                    <div><img src="images/tropical.png" alt="" height="100%" width="100%"></div>
+                    <div class="product-description">
+                        <h3>TROPICAL</h3>
+                        <p>10$</p>
+                    </div>
+                </div>
+            </div>
+            <a href="panier.html" class="button">Commander maintenant</a>
+        </section>
+
+        <section>
+            <h2>LES MEILLEURS KIDZ</h2>
+            <p>De nouvelles recettes avec une touche unique et parfait.</p>
+            <a href="#" class="button">Commencer</a>
+            <div id="mix">
+                <div>
+                    <div><img src="images/pineapple.png" alt="mix1" style="width: 100%; height: 100%;"></div>
+                    <p>ANANAS</p>
+                    <div>
+                        <h4 id="trop">L'EVASION TROPICALE</h4>
+                        <p>
+                           Une boisson naturellement sucrée et intensément rafraichissante pour vos après-midi d'été.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div><img src="images/Gemini_Generated_Image_f4wc1cf4wc1cf4wc.png" alt="mix2" style="width: 100%; height: 100%;"></div>
+                    <p>ORANGE</p>
+                    <div>
+                        <h4 id="sol">UN CONCENTRE DE SOLEIL</h4>
+                        <p>
+                           Retrouvez le gout authentique de l'orange pressée.Une explosion de saveurs pétillantes qui révèille vos papilles des la première gorgée.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div><img src="images/strawberry.png" alt="mix3" style="width: 100%; height: 100%;"></div>
+                    <p>FRAISE ET RAISIN</p>
+                    <div>
+                        <h4 id="duo">DUO GOURMAND</h4>
+                        <p>
+                           Un mélange parfait pour ceux aui recherchent une de perfection et d'originalité.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="monde">
+            <div class="frest">
+                <div><img src="images/enfant.png" alt="image d'un enfant" height="200px" width="200px" ></div>
+                <div><img src="images/cours.png" alt=" image des eleves" height="200px" width="200px"></div>
+            </div>    
+            <div id="message">
+                <h2>Tout le monde aime The Kidz</h2>
+                <p>
+                    Chez <strong>The Kidz</strong>,nous croyons que le plaisir n'a pas d'age. <br>Nos boissons
+                    sont créées à partir d'ingrédients naturels<br>selectionés avec soin pour offrir une explosion 
+                    de fraicheur à chaque gorgée.<br>Que ce soit pour le gouter des enfants
+                    ou une  pause rafraichissante entre adultes,<br>nous avons la recette idéale pour
+                    accompagner vos moments de partage.
+                </p>
+                <a href="#" class="button">En savoir plus</a>
+            </div>
+            <div class="frest">
+                <div><img src="images/table.png" alt="image d'un jeune homme" height="200px" width="200px"></div>
+                <div><img src="images/dame.png" alt="image d'une dame" height="200px" width="200px"></div>
+            </div>
+        </section>
+    </main>
+   <footer>
+        <div class="footer-container">
+            <ul class="footer-col">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="produits.html">Abonnements</a></li>
+                <li><a href="apropos.html">Mixologie</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Nous trouver</a></li>
+            </ul>
+
+            <ul class="footer-col">
+                <li><a href="#">Termes et conditions</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Politique de livraison</a></li>
+                <li><a href="#">Politique de remboursement</a></li>
+                <li><a href="#">Politique de cookies</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+
+            <ul class="footer-col">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Tiktok</a></li>
+            </ul>
+
+            <div class="footer-col newsletter">
+                <h3>Recevez les nouveautés et des remises exclusives :</h3>
+                <p>Saisissez votre adresse e-mail *</p>
+                <form>
+                    <input type="email" placeholder="E-mail" required>
+                    <button type="submit">S'abonner</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="images/logoki-removebg-preview (1).png" alt="Logo">
+                <span class="kidz-text">The Kidz</span>
+            </div>
+            <div class="copyright">
+                © 2026 par The Bridge Inc. Propulsé et sécurisé par <a href="#">THE KIDZ</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
